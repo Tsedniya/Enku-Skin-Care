@@ -3,9 +3,9 @@ import Header from "@/component/header"
 import Hero from "@/component/hero"
 import About from "@/component/about"
 import Treatments from "@/component/treatments"
-import Booking from "@/component/booking"
 import Contact from "@/component/contact"
 import Footer from "@/component/footer"
+import Gallery from "@/component/gallary"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <About/>
       <Treatments />
-      <Booking />
+      <Gallery/>
       <Contact />
       <Footer />
 

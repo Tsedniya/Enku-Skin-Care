@@ -60,16 +60,17 @@ export default function Header() {
               Treatments
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("gallery")}
               className="text-gray-700 hover:text-rose-400 transition-colors"
             >
-              Contact
+              Gallery
             </button>
+            
             <Button
-              onClick={() => scrollToSection("booking")}
+              onClick={() => scrollToSection("contact")}
               className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
             >
-              Book Now
+              Contact
             </Button>
           </nav>
 
@@ -102,16 +103,16 @@ export default function Header() {
                 Treatments
               </button>
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => scrollToSection("gallery")}
                 className="text-left text-gray-700 hover:text-rose-400 transition-colors"
               >
-                Contact
+                Gallery
               </button>
               <Button
-                onClick={() => scrollToSection("booking")}
+                onClick={() => scrollToSection("contact")}
                 className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white w-full"
               >
-                Book Now
+                Contact
               </Button>
             </div>
           </nav>

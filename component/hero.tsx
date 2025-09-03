@@ -56,12 +56,12 @@ export default function Hero() {
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button
-                onClick={() => scrollToSection("booking")}
+                onClick={() => scrollToSection("gallery")}
                 variant="outline"
                 size="lg"
                 className="border-2 border-rose-300 text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
               >
-                Book an Appointment
+                Our Gallery
               </Button>
             </div>
 

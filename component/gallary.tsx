@@ -12,40 +12,40 @@ export default function Gallery() {
 
   const galleryImages = [
     {
-      src: "/placeholder.svg?height=600&width=800&text=Before+After+Acne+Treatment",
-      alt: "Before and After Acne Treatment Results",
-      title: "Acne Treatment Results",
-      description: "Amazing transformation after our specialized acne treatment program",
+      src: "/photo_2025-09-07_11-47-46.jpg",
+      alt: "Before and After Acne Treatment",
+      title: "Acne Treatment",
+      description: "our amazing specialized acne treatment program",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Hydrating+Facial+Process",
+      src: "/photo_2025-09-07_11-47-34.jpg",
       alt: "Hydrating Facial Treatment Process",
       title: "Hydrating Facial Treatment",
       description: "Deep moisturizing treatment for glowing, healthy skin",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Anti+Aging+Results",
+      src: "/photo_2025-09-07_11-47-56.jpg",
       alt: "Anti-Aging Treatment Results",
-      title: "Anti-Aging Therapy",
+      title: "Hyluronic Acid For Dry Skin",
       description: "Visible reduction in fine lines and improved skin elasticity",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Skin+Brightening+Before+After",
+      src: "/photo_3_2025-09-07_11-10-32.jpg",
       alt: "Skin Brightening Before and After",
-      title: "Brightening Treatment",
-      description: "Radiant, even-toned skin after our brightening therapy",
+      title: "Micro needling",
+      description: "Radiant, even-toned skin after our micro needling",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Deep+Cleansing+Treatment",
-      alt: "Deep Cleansing Treatment Session",
-      title: "Deep Cleansing Session",
+      src: "/photo_4_2025-09-07_11-10-32.jpg",
+      alt: "Black Head Treatment Session",
+      title: "Black Head Session",
       description: "Professional deep pore cleansing for clear, fresh skin",
     },
     {
-      src: "/placeholder.svg?height=600&width=800&text=Consultation+Process",
-      alt: "Skin Care Consultation Process",
-      title: "Personalized Consultation",
-      description: "Expert skin analysis and customized treatment planning",
+      src: "/photo_5_2025-09-07_11-10-32.jpg",
+      alt: "Green Micro Crystal",
+      title: "Green Micro Crystal Treatment",
+      description: "Professional green micro crystal treatment",
     },
   ]
 

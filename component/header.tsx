@@ -27,9 +27,14 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-      }`}
-    >
+      isMenuOpen
+      ? "bg-white/95 backdrop-blur-md shadow-lg" // menu open → always white
+      : isScrolled
+      ? "bg-white/95 backdrop-blur-md shadow-lg" // menu closed → scrolled → white
+      : "bg-transparent" // menu closed → not scrolled → transparent
+         }`}
+      >
+
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -82,8 +87,8 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-4 pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 ">
+            <div className="flex flex-col items-center space-y-4 pt-4">
               <button
                 onClick={() => scrollToSection("home")}
                 className="text-left text-gray-700 hover:text-rose-400 transition-colors"
@@ -110,7 +115,7 @@ export default function Header() {
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white w-full"
+                className="bg-gradient-to-r from-rose-400 to-pink-400 hover:from-rose-500 hover:to-pink-500 text-white px-6 py-2 rounded-full"
               >
                 Contact
               </Button>

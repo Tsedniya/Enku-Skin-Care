@@ -16,6 +16,7 @@ export default function Gallery() {
       alt: "Before and After Acne Treatment",
       title: "Acne Treatment",
       description: "our amazing specialized acne treatment program",
+      
     },
     {
       src: "/photo_2025-09-07_11-47-34.jpg",
@@ -42,7 +43,7 @@ export default function Gallery() {
       description: "Professional deep pore cleansing for clear, fresh skin",
     },
     {
-      src: "/photo_5_2025-09-07_11-10-32.jpg",
+      src: "/photo_2025-09-30_21-10-07.jpg",
       alt: "Green Micro Crystal",
       title: "Green Micro Crystal Treatment",
       description: "Professional green micro crystal treatment",

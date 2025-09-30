@@ -90,7 +90,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-rose-200 to-green-200 rounded-3xl transform rotate-6"></div>
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
                 <Image
-                  src="/photo.jpg" 
+                  src="/photo_4_2025-09-07_11-10-32.jpg" 
                   alt="Glowing healthy skin treatment"
                   width={500}
                   height={600}

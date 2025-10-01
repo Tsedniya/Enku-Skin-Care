@@ -16,7 +16,6 @@ export default function Gallery() {
       alt: "Before and After Acne Treatment",
       title: "Acne Treatment",
       description: "our amazing specialized acne treatment program",
-      
     },
     {
       src: "/photo_2025-09-07_11-47-34.jpg",
@@ -25,13 +24,13 @@ export default function Gallery() {
       description: "Deep moisturizing treatment for glowing, healthy skin",
     },
     {
-      src: "/photo_2025-09-07_11-47-56.jpg",
+      src: "/photo_2025-10-01_15-44-14.jpg",
       alt: "Anti-Aging Treatment Results",
       title: "Hyluronic Acid For Dry Skin",
       description: "Visible reduction in fine lines and improved skin elasticity",
     },
     {
-      src: "/photo_3_2025-09-07_11-10-32.jpg",
+      src: "/photo_2025-10-01_15-43-57.jpg",
       alt: "Skin Brightening Before and After",
       title: "Micro needling",
       description: "Radiant, even-toned skin after our micro needling",
@@ -89,13 +88,6 @@ export default function Gallery() {
     setCurrentSlide(index)
   }
 
-  const scrollToBooking = () => {
-    const element = document.getElementById("testimonials")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section id="gallery" className="py-20 px-4 bg-white">
       <div className="container mx-auto">
@@ -123,12 +115,12 @@ export default function Gallery() {
         >
           {/* Main Slider */}
           <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <div className="relative h-[350px] lg:h-[450px]">
+            <div className="relative h-[350px] lg:h-[450px] bg-black">
               <Image
                 src={galleryImages[currentSlide].src || "/placeholder.svg"}
                 alt={galleryImages[currentSlide].alt}
                 fill
-                className="object-cover transition-all duration-500"
+                className="object-contain transition-all duration-500"
               />
 
               {/* Overlay with content */}
@@ -178,7 +170,12 @@ export default function Gallery() {
                     : "hover:scale-105 opacity-70 hover:opacity-100"
                 }`}
               >
-                <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  fill
+                  className="object-contain bg-black"
+                />
               </button>
             ))}
           </div>

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Enku Skin Care",
+  title: "Enku Skincare",
   description: "Best skin care treatments in Ethiopia",
   icons: {
     icon: "/favicon.svg",  

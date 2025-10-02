@@ -5,8 +5,6 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Sparkles } from "lucide-react"
 
-
-
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
 
@@ -25,6 +23,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-4">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side */}
           <div
             className={`space-y-8 transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -81,6 +80,7 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Right Side (Image) */}
           <div
             className={`relative transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -90,11 +90,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-rose-200 to-green-200 rounded-3xl transform rotate-6"></div>
               <div className="relative bg-white rounded-3xl p-8 shadow-2xl">
                 <Image
-                  src="/photo_4_2025-09-07_11-10-32.jpg" 
+                  src="/photo_4_2025-09-07_11-10-32.jpg"
                   alt="Glowing healthy skin treatment"
                   width={500}
                   height={600}
-                  className="rounded-2xl object-cover w-full h-[600px]"
+                  className="rounded-2xl object-cover w-full aspect-square sm:h-[600px] sm:aspect-auto"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
                   <Sparkles className="h-6 w-6 text-rose-400" />

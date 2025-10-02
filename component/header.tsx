@@ -80,7 +80,7 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden mr-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden " onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
